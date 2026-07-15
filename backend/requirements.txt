@@ -1,0 +1,33 @@
+# ------------------------------------------------------------------
+# Dependencias del backend. Rangos compatibles con Python 3.11 - 3.13.
+# (Probado con Python 3.13; para Docker se usa python:3.12-slim.)
+# ------------------------------------------------------------------
+
+# API / web
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+
+# Persistencia (ORM + driver MySQL)
+SQLAlchemy>=2.0.35
+PyMySQL>=1.1.1
+
+# Configuración y validación
+pydantic>=2.9
+pydantic-settings>=2.5
+email-validator>=2.2
+
+# Seguridad (JWT + hashing con pbkdf2_sha256)
+python-jose[cryptography]>=3.3
+passlib>=1.7.4
+
+# ETL / análisis de datos
+pandas>=2.2
+numpy>=1.26
+
+# Análisis de texto / modelado de tópicos (minería de texto)
+scikit-learn>=1.5
+
+# Conector real configurable (tendencias de búsqueda)
+pytrends>=4.9
+requests>=2.32
