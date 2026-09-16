@@ -142,7 +142,7 @@ export default function Dashboard() {
       {/* --- Tendencias destacadas --- */}
       <div className="panel">
         <h3>Áreas con mayor crecimiento</h3>
-        <p className="subtitle">Tendencia de la demanda de búsqueda por área.</p>
+        <p className="subtitle">Tendencia del número de cursos publicados por área.</p>
         <table>
           <thead>
             <tr><th>Área</th><th>Tendencia</th><th>Crecimiento</th><th>Confianza (R²)</th></tr>
